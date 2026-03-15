@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Pace Higher Secondary School"
+version = "1.0.0"
+id = "artifacts/pace-school"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19009
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/pace-school run dev"
+
+[services.env]
+PORT = "19009"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/pace-school", "run", "build"]
+publicDir = "artifacts/pace-school/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For smooth scroll animations and elegant page transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely"
+  "lucide-react": "Icons for UI elements"
+
+images:
+  - path: "artifacts/pace-school/public/images/hero-abstract.png"
+    description: "Elegant abstract background in deep maroon and gold colors, soft gradients, premium academic feel, slightly textured"
+    aspect_ratio: "16:9"
+  - path: "artifacts/pace-school/public/images/pattern-bg.png"
+    description: "Subtle geometric pattern background in very light gold/cream colors for section backgrounds, professional"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a static frontend for a school website. No API backend is required.
+  - Using Framer Motion for premium scroll effects.
